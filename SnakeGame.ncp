@@ -1,0 +1,123 @@
+<Project>
+  <Name>SnakeGame</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Snake</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Form1</Name>
+        <Access>Public</Access>
+        <Location left="672" top="106" />
+        <Size width="276" height="281" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Snake&gt; Snake = new List&lt;Snake&gt;()</Member>
+        <Member type="Field">private Snake food = new Snake()</Member>
+        <Member type="Method">public void form1()</Member>
+        <Member type="Method">private void updateScreen()</Member>
+        <Member type="Method">public void moveSnake()</Member>
+        <Member type="Method">private void KeyIsDown()</Member>
+        <Member type="Method">private void KeyIsUp()</Member>
+        <Member type="Method">private void updateGraphics()</Member>
+        <Member type="Method">private void startGame()</Member>
+        <Member type="Method">private void createFood()</Member>
+        <Member type="Method">private void grow()</Member>
+        <Member type="Method">private void dead()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>gameSettings</Name>
+        <Access>Public</Access>
+        <Location left="334" top="106" />
+        <Size width="207" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void gameSettings()</Member>
+        <Member type="Property">public static int Width { get; set; }</Member>
+        <Member type="Property">public static int Height { get; set; }</Member>
+        <Member type="Property">public static int Speed { get; set; }</Member>
+        <Member type="Property">public static int Score { get; set; }</Member>
+        <Member type="Property">public static int Points { get; set; }</Member>
+        <Member type="Property">public static bool gameOver { get; set; }</Member>
+        <Member type="Property">public static directions directions { get; set; }</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Snake</Name>
+        <Access>Public</Access>
+        <Location left="1047" top="106" />
+        <Size width="162" height="247" />
+        <Collapsed>False</Collapsed>
+        <Member type="Property">public int X { get; set; }</Member>
+        <Member type="Property">public int Y { get; set; }</Member>
+        <Member type="Method">public void Snake()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Movement</Name>
+        <Access>Public</Access>
+        <Location left="672" top="476" />
+        <Size width="240" height="132" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private static Hashtable keytable</Member>
+        <Member type="Method">public static bool KeyPress(Keys key)</Member>
+        <Member type="Method">public static void changeState(Keys key, bool state)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Association" first="2" second="0">
+        <Label>
+        </Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>647</X>
+          <Y>240</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="0">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>973</X>
+          <Y>240</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1..*</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>758</X>
+          <Y>451</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>758</X>
+          <Y>423</Y>
+        </BendPoint>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
